@@ -14,7 +14,8 @@ class RoleSeeder extends Seeder
     public function run(): void
     {
         $admin = Role::create(['name' => 'Admin']);
-        $user = Role::create(['name' => 'Staff']);
+        $user = Role::create(['name' => 'Role 01']);
+        $user2 = Role::create(['name' => 'Role 02']);
 
         $admin->givePermissionTo([
             'create-hospital',
@@ -35,6 +36,15 @@ class RoleSeeder extends Seeder
             'create-hospital',
             'edit-hospital',
             'delete-hospital',
+        ]);
+
+        $user2->givePermissionTo([
+            'create-hospital',
+            'edit-hospital',
+            'delete-hospital',
+            'create-patient',
+            'edit-patient',
+            'delete-patient',
         ]);
 
     }

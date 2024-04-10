@@ -22,12 +22,20 @@ class AdminSeeder extends Seeder
         ]);
         $admin->assignRole('Admin');
 
-        // Creating Product Manager User
+        
         $staff = User::create([
             'username' => 'ramkishor', 
             'userId' => 'ramk02',
             'password' => Hash::make('ramkishore1234')
         ]);
-        $staff->assignRole('Staff');
+        $staff->assignRole('Role 01');
+
+
+        $staff = User::create([
+            'username' => 'Jane dayn', 
+            'userId' => 'jane03',
+            'password' => Hash::make('janedayn1234')
+        ]);
+        $staff->assignRole('Role 02');
     }
 }
