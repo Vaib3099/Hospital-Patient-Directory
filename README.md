@@ -11,10 +11,15 @@
 
 1) Install and run Xampp Server.
 2) Go to "C:\xampp\htdocs" and clone this repository. 
-2) Start Apache and Mysql services on Xampp.
-3) Go to "http://localhost/phpmyadmin/" and create a new Database named "hospital_manage".
-4) Open project in code editor like VSCode.
-5) Open terminal and go to project directory.
+3) Start Apache and Mysql services on Xampp.
+4) Go to "http://localhost/phpmyadmin/" and create a new Database named "hospital_manage".
+5) Open project in code editor like VSCode.
+6) Open terminal and go to project directory.
+
+6) Now run command to install node modules
+
+npm install <br>
+npm run build
 
 6) run commands to migrate table schema in database.
 
@@ -23,11 +28,6 @@ php artisan migrate:fresh
 6) Run command to insert data in data tables.
 
 php artisan db:seed
-
-6) Now run command to install node modules
-
-npm install
-npm run build
 
 7) Run laravel Server
 
@@ -43,10 +43,10 @@ php artisan serve
 
 ## Predefined User Details:
 
-1) UserId: john01
-   Password: john1234
+1) UserId: john01 <br>
+   Password: john1234<br>
    Role: Admin
 
-2) UserId: ramk02
-   Password: ramkishore1234
+2) UserId: ramk02<br>
+   Password: ramkishore1234<br>
    Role: Staff
