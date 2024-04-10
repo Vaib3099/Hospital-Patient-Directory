@@ -1,16 +1,27 @@
+Requirements:
+
+1) Xampp Server
+2) PHP 8.1
+3) Laravel 10.x
+4) VSCode
+
 Installation:
 
-1) create database and update DB details in .env file.
-2) Open project in code editor like VSCode.
-3) Open terminal and execute commands to migrate and seed data in database.
+1) Install and run Xampp Server.
+2) Start Apache and Mysql services on Xampp.
+3) Go to "http://localhost/phpmyadmin/" and create a new Database named "hospital_manage".
+4) Open project in code editor like VSCode.
+5) Open terminal and go to project directory.
 
-DB Migration:
+6) run commands to migrate table schema in database.
 
 php artisan migrate:fresh
 
-DB Seeder:
+6) Run command to insert data in data tables.
 
 php artisan db:seed
+
+6) Now run command to 
 
 
 Predefine User Roles:
