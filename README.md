@@ -4,10 +4,13 @@
 2) PHP 8.1
 3) Laravel 10.x
 4) VSCode
+5) Node 18.15.0
+6) NPM 9.5.0
 
 ## Installation:
 
 1) Install and run Xampp Server.
+2) Go to "C:\xampp\htdocs" and clone this repository. 
 2) Start Apache and Mysql services on Xampp.
 3) Go to "http://localhost/phpmyadmin/" and create a new Database named "hospital_manage".
 4) Open project in code editor like VSCode.
