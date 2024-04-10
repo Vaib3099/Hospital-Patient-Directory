@@ -21,7 +21,16 @@ php artisan migrate:fresh
 
 php artisan db:seed
 
-6) Now run command to 
+6) Now run command to install node modules
+
+npm install
+npm run build
+
+7) Run laravel Server
+
+php artisan serve
+
+8) Application will start running on this url "http://127.0.0.1:8000/"
 
 
 Predefine User Roles:
