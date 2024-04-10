@@ -13,7 +13,7 @@ class PatientSeeder extends Seeder
      */
     public function run(): void
     {
-        Patient::create([
+        /*Patient::create([
             'patient_name' => 'John Doe',
             'age' => 30,
             'phone_number' => '1234567890',
@@ -27,6 +27,8 @@ class PatientSeeder extends Seeder
             'phone_number' => '9876543210',
             'hospital_id' => 1,
             'photo' => 'path/to/photo.jpg',
-        ]);
+        ]);*/
+
+        Patient::factory()->count(50)->create();
     }
 }
