@@ -26,7 +26,7 @@ class HospitalController extends Controller
     public function index(): View
     {
         return view('hospitals.index', [
-            'hospitals' => Hospital::latest()->paginate(3)
+            'hospitals' => Hospital::latest()->paginate(10)
         ]);
     }
 
